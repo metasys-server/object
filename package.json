@@ -1,0 +1,34 @@
+{
+  "name": "@jci/get-metaobject",
+  "version": "1.0.0",
+  "description": "Read an object from a Metasys site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.jci.com/serverkit/get-metaobject.git"
+  },
+  "keywords": [
+    "metasys",
+    "read",
+    "object",
+    "reference",
+    "id"
+  ],
+  "author": {
+    "name": "Michael Welch",
+    "email": "michael.g.welch@jci.com"
+  },
+  "license": "Unlicense",
+  "dependencies": {
+    "@jci/serverkit": "^1.0.4",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
