@@ -13,12 +13,26 @@ npm install -g @serverkit/get-metaobject
 ## Usage
 
 ```bash
-$ get-metaobject "myadx:mynae/myfolder.folder.object"
-password:
+$ get-metaobject --ca ../thesun.pem "thesun:Earth3601/Programming.AV1"
+Password: *********
 {
-
+  "id": "c334e3a8-a2a0-53ec-ac86-2f2fc5746748",
+  "itemReference": "thesun:Earth3601/Programming.AV1",
+  "name": "AV1",
+  "type": "/enumSets/508/members/165",
+  "self": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748",
+  "parent": "/objects/d24ead32-6895-5ba9-90b9-1976464c7fe0",
+  "objects": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/objects",
+  "networkDevice": "/networkDevices/2603fb33-3e15-5360-a27b-413fa04d166f",
+  "points": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/points",
+  "attributes": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/attributes",
+  "alarms": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/alarms",
+  "audits": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/audits"
 }
 ```
+
+For this to work I had to specify environment variables for the username and hostname. 
+See the next section on how to do this or otherways to provide this information.
 
 ## Credentials
 
