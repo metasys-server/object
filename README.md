@@ -88,8 +88,8 @@ If the computer you are on doesn't trust the certificate on the Metasys Server t
     ```
 2. Use `--insecure` switch.
 
-    > **Note: This should never be used on a production system.
-    > As the switch name suggests this is insecure.**
+    **Note: This should never be used on a production system.
+    As the switch name suggests this is insecure.**
 
     ```bash
     get-metaobject --insecure "myadx:mynae/myobject"
