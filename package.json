@@ -1,5 +1,5 @@
 {
-  "name": "@jci/get-metaobject",
+  "name": "@serverkit/get-metaobject",
   "version": "1.0.1",
   "description": "Read an object from a Metasys site",
   "main": "index.js",
