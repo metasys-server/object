@@ -7,7 +7,7 @@ Retrieve a metasys object from metasys server
 This can be installed globally as a command line application.
 
 ```bash
-npm install -g @jci/get-metaobject
+npm install -g @serverkit/get-metaobject
 ```
 
 ## Usage
