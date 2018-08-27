@@ -26,8 +26,9 @@
   },
   "license": "Unlicense",
   "dependencies": {
-    "@serverkit/serverkit": "^1.0.5",
-    "minimist": "^1.2.0"
+    "@serverkit/serverkit": "^1.0.6",
+    "minimist": "^1.2.0",
+    "readline-sync": "^1.4.9"
   },
   "devDependencies": {
     "eslint": "^5.4.0",
