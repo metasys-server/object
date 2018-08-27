@@ -1,6 +1,6 @@
 {
   "name": "@serverkit/get-metaobject",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read an object from a Metasys site",
   "main": "index.js",
   "bin": {
@@ -26,7 +26,7 @@
   },
   "license": "Unlicense",
   "dependencies": {
-    "@jci/serverkit": "^1.0.4",
+    "@serverkit/serverkit": "^1.0.5",
     "minimist": "^1.2.0"
   },
   "devDependencies": {
