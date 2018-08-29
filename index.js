@@ -10,15 +10,11 @@ async function main() {
   const reference = new Reference(options.reference);
 
   // prompt for password if not set already
-  const password = options.password ? options.password : await promptPassword();
-
-  if (!options.hostname) {
-    options.hostname = reference.siteName;
-  }
-
+  const password = options.password || promptPassword();
+  const hostname = options.hostname || reference.siteName;
 
   const api = new MetasysServerApi();
-  const successful = await api.login(options.username, password, options.hostname, options.options);
+  const successful = await api.login(options.username, password, hostname, options.options);
 
   if (!successful) {
     return;

@@ -63,3 +63,6 @@ typings/
 
 # don't include personal launch settings
 .vscode/launch.json
+
+# Used for testing purposes only
+metasys.json 
