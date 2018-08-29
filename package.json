@@ -27,6 +27,10 @@
   "license": "Unlicense",
   "dependencies": {
     "@serverkit/serverkit": "^1.0.6",
+<<<<<<< HEAD
+=======
+    "ajv": "^6.5.3",
+>>>>>>> b79d277... Fix peer dependency warning
     "minimist": "^1.2.0",
     "readline-sync": "^1.4.9"
   },

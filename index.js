@@ -6,9 +6,11 @@ const { promptPassword, processArguments } = require('./lib/helpers');
 const { MetasysServerApi, Reference } = _;
 
 async function main() {
-  const password = promptPassword();
   const options = processArguments();
   const reference = new Reference(options.reference);
+
+  // prompt for password if not set already
+  const password = options.password ? options.password : await promptPassword();
 
   if (!options.hostname) {
     options.hostname = reference.siteName;

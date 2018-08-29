@@ -31,21 +31,21 @@ Password: *********
 }
 ```
 
-For this to work I had to specify environment variables for the username and hostname. 
-See the next section on how to do this or otherways to provide this information.
+For this to work I had to specify environment variables for the username and hostname.
+See the next section on how to do this or other ways to provide this information.
 
-## Credentials
+## Specifying Credentials and Host
 
-You must provide username and password as well as a metasys server
-hostname (or ip address). In all cases you will be prompted
-for your password.
+You must provide username and password. You can also specify a hostname.
+If no hostname is provided, then you it will be derived from the specified object reference.
+If no password is provided, the app will prompt you for one.
 
-The username and hostname can be provided in one of three ways:
+The parameters can be provided in one of three ways:
 
 1. You can supply them on the command line:
 
     ```bash
-    get-metaobject -u john -h myadx "myadx:mynae/myobject"
+    get-metaobject -u john -p pass -h myadx "myadx:mynae/myobject"
     ```
 
 2. You can supply them thru a file:
@@ -55,6 +55,7 @@ The username and hostname can be provided in one of three ways:
     ```json
     {
         "username": "john",
+        "password": "pass",
         "hostname": "myadx"
     }
     ```
@@ -65,17 +66,13 @@ The username and hostname can be provided in one of three ways:
     get-metaobject -f metasys.json "myadx:mynae/myobject"
     ```
 
-3. Use environment variables
+3. Use environment variables (Note: password can't be specified using env variable.)
 
     ```bash
     export METASYS_USERNAME=john
     export METASYS_HOSTNAME=myadx
     get-metaobject "myadx:mynae/myobject"
     ```
-
-    **Note:** If hostname is not specified, then the site name used in the reference will be used. This may not always work. For example if the certificate for `thesun` is issues for `thesun.cg.na.jci.com`.
-
-
 
 ## Certificates
 
@@ -89,7 +86,7 @@ If the computer you are on doesn't trust the certificate on the Metasys Server t
 2. Use `--insecure` switch.
 
     **Note: This should never be used on a production system.
-    As the switch name suggests this is insecure.**
+    As the switch name suggests, this is an insecure practice.**
 
     ```bash
     get-metaobject --insecure "myadx:mynae/myobject"
