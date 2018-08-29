@@ -1,6 +1,6 @@
 {
   "name": "@serverkit/get-metaobject",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Read an object from a Metasys site",
   "main": "index.js",
   "bin": {

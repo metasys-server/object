@@ -91,5 +91,3 @@ If the computer you are on doesn't trust the certificate on the Metasys Server t
     ```bash
     get-metaobject --insecure "myadx:mynae/myobject"
     ```
-
-
