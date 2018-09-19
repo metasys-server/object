@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
-const _ = require('@serverkit/serverkit');
+const _ = require('@metasys/nodekit');
 const { promptPassword, processArguments } = require('./lib/helpers');
 
 const { MetasysServerApi, Reference } = _;

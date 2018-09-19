@@ -1,4 +1,4 @@
-# get-metaobject
+# object
 
 Retrieve a metasys object from metasys server
 
@@ -7,13 +7,13 @@ Retrieve a metasys object from metasys server
 This can be installed globally as a command line application.
 
 ```bash
-npm install -g @serverkit/get-metaobject
+npm install -g @metasys/object
 ```
 
 ## Usage
 
 ```bash
-$ get-metaobject --ca ../thesun.pem "thesun:Earth3601/Programming.AV1"
+$ object -u username -p password -h hostname --ca ../thesun.pem "thesun:Earth3601/Programming.AV1"
 Password: *********
 {
   "id": "c334e3a8-a2a0-53ec-ac86-2f2fc5746748",
@@ -30,9 +30,6 @@ Password: *********
   "audits": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748/audits"
 }
 ```
-
-For this to work I had to specify environment variables for the username and hostname.
-See the next section on how to do this or other ways to provide this information.
 
 ## Specifying Credentials and Host
 

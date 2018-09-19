@@ -1,17 +1,17 @@
 {
-  "name": "@serverkit/get-metaobject",
-  "version": "1.0.3",
+  "name": "@metasys/object",
+  "version": "1.0.0",
   "description": "Read an object from a Metasys site",
   "main": "index.js",
   "bin": {
-    "get-metaobject": "./index.js"
+    "object": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.jci.com/serverkit/get-metaobject.git"
+    "url": "https://github.com/metasys-server/objectjs"
   },
   "keywords": [
     "metasys",
@@ -24,9 +24,9 @@
     "name": "Michael Welch",
     "email": "michael.g.welch@jci.com"
   },
-  "license": "Unlicense",
+  "license": "BSD-3-Clause",
   "dependencies": {
-    "@serverkit/serverkit": "^1.0.6",
+    "@metasys/nodekit": "^1.0.2",
     "ajv": "^6.5.3",
     "minimist": "^1.2.0",
     "readline-sync": "^1.4.9"
