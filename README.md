@@ -42,7 +42,7 @@ The parameters can be provided in one of three ways:
 1. You can supply them on the command line:
 
     ```bash
-    get-metaobject -u john -p pass -h myadx "myadx:mynae/myobject"
+    object -u john -p pass -h myadx "myadx:mynae/myobject"
     ```
 
 2. You can supply them thru a file:
@@ -60,7 +60,7 @@ The parameters can be provided in one of three ways:
     And then use the `-f` switch
 
     ```bash
-    get-metaobject -f metasys.json "myadx:mynae/myobject"
+    object -f metasys.json "myadx:mynae/myobject"
     ```
 
 3. Use environment variables (Note: password can't be specified using env variable.)
@@ -68,7 +68,7 @@ The parameters can be provided in one of three ways:
     ```bash
     export METASYS_USERNAME=john
     export METASYS_HOSTNAME=myadx
-    get-metaobject "myadx:mynae/myobject"
+    object "myadx:mynae/myobject"
     ```
 
 ## Certificates
@@ -78,7 +78,7 @@ If the computer you are on doesn't trust the certificate on the Metasys Server t
 1. Use `--ca` switch to pass a `.pem` file.
 
     ```bash
-    get-metaobject --ca /path/to/server.pem "myadx:mynae/myobject"
+    object --ca /path/to/server.pem "myadx:mynae/myobject"
     ```
 2. Use `--insecure` switch.
 
@@ -86,5 +86,5 @@ If the computer you are on doesn't trust the certificate on the Metasys Server t
     As the switch name suggests, this is an insecure practice.**
 
     ```bash
-    get-metaobject --insecure "myadx:mynae/myobject"
+    object --insecure "myadx:mynae/myobject"
     ```
