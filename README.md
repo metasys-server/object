@@ -73,7 +73,8 @@ The parameters can be provided in one of three ways:
 
 ## Certificates
 
-If the computer you are on doesn't trust the certificate on the Metasys Server there are two switches you can use.
+If you are using a self signed certificate on your Metasys® Server you should configure your computer to trust
+that certificate. If you are having difficulty doing that there are two options you have.
 
 1. Use `--ca` switch to pass a `.pem` file.
 
