@@ -24,6 +24,9 @@
     "name": "Michael Welch",
     "email": "michael.g.welch@jci.com"
   },
+  "engine": {
+    "node": ">=10.0"
+  },
   "license": "BSD-3-Clause",
   "dependencies": {
     "@metasys/nodekit": "^1.0.2",
