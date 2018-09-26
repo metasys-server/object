@@ -13,11 +13,11 @@ npm install -g @metasys/object
 ## Usage
 
 ```bash
-$ object -u username -p password -h hostname --ca ../thesun.pem "thesun:Earth3601/Programming.AV1"
+$ object -u username "myAdx:myNae/Programming.AV1"
 Password: *********
 {
   "id": "c334e3a8-a2a0-53ec-ac86-2f2fc5746748",
-  "itemReference": "thesun:Earth3601/Programming.AV1",
+  "itemReference": "myAdx:myNae/Programming.AV1",
   "name": "AV1",
   "type": "/enumSets/508/members/165",
   "self": "/objects/c334e3a8-a2a0-53ec-ac86-2f2fc5746748",
