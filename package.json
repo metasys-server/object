@@ -1,6 +1,6 @@
 {
   "name": "@metasys/object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read an object from a Metasys® site",
   "main": "index.js",
   "bin": {
@@ -29,13 +29,13 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@metasys/nodekit": "^1.0.3",
+    "@metasys/nodekit": "^1.0.4",
     "ajv": "^6.5.3",
     "minimist": "^1.2.0",
     "readline-sync": "^1.4.9"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.15.3",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
   }
