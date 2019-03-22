@@ -14,6 +14,13 @@ All notable changes to this project will be tracked in this file.
 
 ## Released
 
+### [1.0.1] - 2019-03-22
+
+* Update dependencies
+* Update readme
+
 ### 1.0.0 - 2018-09-19
 
 Initial version
+
+[1.0.1]: https://github.com/metasys-server/objectjs/compare/v1.0.0...v1.0.1
