@@ -1,6 +1,6 @@
 {
   "name": "@metasys/object",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Read an object from a Metasys® site",
   "main": "index.js",
   "bin": {
@@ -29,7 +29,7 @@
   },
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@metasys/nodekit": "^1.0.4",
+    "@metasys/nodekit": "^2.0.0",
     "ajv": "^6.5.3",
     "minimist": "^1.2.0",
     "readline-sync": "^1.4.9"
