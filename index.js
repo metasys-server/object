@@ -20,17 +20,11 @@ async function main() {
     return;
   }
 
-  const device = await _.first(api.supervisoryDevices(),
-    element => element.itemReference === reference.engineReference);
+  const queryParameters = { fqr: reference.reference };
+  const objectId = await api.get(`https://${hostname}/api/objectIdentifiers`, queryParameters);
+  console.log(`The id for '${reference.reference}' is '${objectId}'`);
 
-  if (reference.isEngineReference) {
-    console.log(JSON.stringify(device, null, 2));
-    return;
-  }
-
-  const object = await _.first(api.objects({ deviceId: device.id }),
-    element => element.itemReference === options.reference);
-
+  const object = await api.get(`/objects/${objectId}`);
   console.log(JSON.stringify(object, null, 2));
 }
 
