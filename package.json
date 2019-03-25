@@ -1,6 +1,6 @@
 {
   "name": "@metasys/object",
-  "version": "2.0.1-0",
+  "version": "2.0.1",
   "description": "Read an object from a Metasys® site",
   "main": "index.js",
   "bin": {
