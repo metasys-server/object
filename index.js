@@ -22,8 +22,9 @@ async function main() {
 
   const queryParameters = { fqr: reference.reference };
   const objectId = await api.get(`https://${hostname}/api/objectIdentifiers`, queryParameters);
-  const object = await api.get(`/objects/${objectId}`);
+  console.log(`The id for '${reference.reference}' is '${objectId}'`);
 
+  const object = await api.get(`/objects/${objectId}`);
   console.log(JSON.stringify(object, null, 2));
 }
 
